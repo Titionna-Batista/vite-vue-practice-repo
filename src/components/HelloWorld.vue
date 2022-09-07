@@ -15,8 +15,10 @@ const count = ref(0);
     <button type="button" @click="count++">count is {{ count }}</button>
     <div class="textbox">
       <p>Text</p>
-      <button type="button"><img src="../assets/copy-icon.svg" /></button>
-      <button type="button">Edit Text</button>
+      <button type="copy" @click="copy">
+        <img src="../assets/copy-icon.svg" />
+      </button>
+      <button type="edit" @click="edit">Edit Text</button>
     </div>
     <p>
       Edit
